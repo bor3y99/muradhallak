@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.first-page {
+    background-image: url(./images/spalsh\ background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#git-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.change-red {
+    color: red;
+    transform: rotate(-24deg);
+    display: inline-block; 
+    position: relative;    
+}
+
+.color-letter {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red-button {
+    background-color: #cd1f3e;
+    border: #cd1f3e;
+    border-radius: 1cap;
+    height: 50px;
+    width: 150px;
+    color: white;
+    box-shadow: 0px 4px 8px #cd1f3e, inset 0px 2px 3px #a30825;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#small {
+    width: 170px;
+}

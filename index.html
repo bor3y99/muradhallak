@@ -13,30 +13,32 @@
   </script>
 </head>
 <body>
-  <nav>
-    <div>
-      <h2>{<span class="color-letter">/</span>}</h2>
-      <h2>Murad Hallak</h2>
-    </div>
-    <div>
-      <button>Projects</button>
-      <button>About Me</button>
-    </div>
-    <div>
-      <button>CONTACT ME</button>
-      <a href="https://github.com/bor3y99">
-        <img src="./resources/Icons/github-6980894_1280.webp" alt="GitHub Logo">
-        github
-      </a>
-    </div>
-  </nav>
-  <main>
-    <h1>Murad Hallak</h1>
-    <h2>HTML, CSS & Javascript web Devolpment</h2>
-    <h3>My name is Murad Hallak I'm full stack engineer, I went to University of Akron for 3 years 
-    as computer engineer then I took a course with codeacademy to learn web devolpment.</h3>
-    <button>CONTACT ME</button>
-  </main>
+  <section class="first-page">
+    <nav>
+      <div>
+        <h2 class="change-red">{<span   class="color-letter">/</span>}</h2>
+        <h2>Murad Hallak</h2>
+      </div>
+      <div>
+        <button>Projects</button>
+        <button>About Me</button>
+      </div>
+      <div>
+        <button class="red-button">CONTACT ME</button>
+        <a href="https://github.com/bor3y99">
+          <img src="./resources/Icons/github-6980894_1280.webp" alt="GitHub Logo" id="git-logo">
+          github
+        </a>
+      </div>
+    </nav>
+    <main>
+      <h1>Murad Hallak</h1>
+      <h2>HTML, CSS & Javascript web Devolpment</h2>
+      <h3>My name is Murad Hallak I'm full stack engineer, I went to University of Akron for 3 years 
+      as computer engineer then I took a course with codeacademy to learn web devolpment.</h3>
+      <button class="red-button">CONTACT ME</button>
+    </main>
+  </section>
   <section>
     <img>
     <h3>PROJECTS</h3>
@@ -49,7 +51,7 @@
     <h5>HTML</h5>
     <h5>CSS</h5>
     <h5>JS</h5>
-    <button>VIEW PROJECT</button>
+    <button class="red-button" id="small">VIEW PROJECT</button>
   </section>
   <section>
     <h4>Website/membership</h4>
@@ -59,7 +61,7 @@
     <h5>HTML</h5>
     <h5>CSS</h5>
     <h5>JS</h5>
-    <button>VIEW PROJECT</button>
+    <button class="red-button" id="small">VIEW PROJECT</button>
   </section>
   <section>
     <h4>Website/membership</h4>
@@ -69,7 +71,7 @@
     <h5>HTML</h5>
     <h5>CSS</h5>
     <h5>JS</h5>
-    <button>VIEW PROJECT</button>
+    <button class="red-button" id="small">VIEW PROJECT</button>
   </section>
   <section>
     <h2>ABOUT ME</h2>
@@ -96,26 +98,51 @@
     <h3>CONTACT ME</h3>
   </section>
   <section>
-    <h6>Let's Talk</h6>
-    <form id="contactForm" action="#" method="post">
-      <div class="input-container">
-        <label for="name">Name</label>
-        <br>
-        <input type="text" id="name" name="name" required placeholder="Full Name">
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <br>
-        <input type="email" id="email" name="email" placeholder="Type your email address..." required>
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <br>
-        <textarea id="message" name="message" placeholder="Message" rows="5" cols="30" required></textarea>
-      </div>
-      <button type="submit">SEND MESSAGE</button>
-    </form>
+    <div>
+      <h6>Let's Talk</h6>
+      <form id="contactForm" action="#" method="post">
+        <div class="input-container">
+          <label for="name">Name</label>
+          <br>
+          <input type="text" id="name" name="name" required placeholder="Full Name">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <br>
+          <input type="email" id="email" name="email" placeholder="Type your email address..." required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <br>
+          <textarea id="message" name="message" placeholder="Message" rows="5" cols="30" required></textarea>
+        </div>
+        <button type="submit" class="red-button" id="long">SEND MESSAGE</button>
+      </form>
+    </div>
+    <div>
+      <h5>Contact info</h5>
+      <img src="./resources/Icons/phone.png" alt="Phone icon">
+      <h4>330-907-2872</h4>
+      <img src="./resources/Icons/mail.png" alt="mail icon">
+      <h4>Murad.Hallak.99@Gmail.com</h4>
+      <img src="./resources/Icons/location.png" alt="location icon">
+      <h4>San Antonio, TX</h4>
+    </div>
   </section>
+  <footer>
+    <p>Murad Hallak. All rights reserved</p>
+    <div>
+      <a href="https://www.facebook.com/murad.hallak.99">
+        <img src="./resources/Icons/facebook.svg" alt="facebook logo">
+      </a>
+      <a href="https://www.instagram.com/murad_hallak/">
+        <img src="./resources/Icons/instagram.svg" alt="instagram logo">
+      </a>
+      <a href="https://x.com/muradhallak">
+        <img src="./resources/Icons/X_logo_2023_original 1.svg" alt="X logo">
+      </a>
+    </div>
+  </footer>
   <script src="./resources/script.js"></script>
 </body>
 </html>
