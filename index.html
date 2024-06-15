@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Murad Hallak</title>
   <link rel="stylesheet" href="./resources/style.css">
-  <script src="./resources/script.js" type="text/Javascript"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("8FZk84_4l1yvB2uTs"); // Replace with your EmailJS user ID
-        })();
-    </script>
+  <script>
+    (function() {
+        emailjs.init("8FZk84_4l1yvB2uTs"); // Replace with your EmailJS user ID
+    })();
+  </script>
 </head>
 <body>
   <nav>
@@ -27,8 +26,9 @@
       <button>CONTACT ME</button>
       <a href="https://github.com/bor3y99">
         <img src="./resources/Icons/github-6980894_1280.webp" alt="GitHub Logo">
-        github</a>
-      </div>
+        github
+      </a>
+    </div>
   </nav>
   <main>
     <h1>Murad Hallak</h1>
@@ -42,79 +42,80 @@
     <h3>PROJECTS</h3>
   </section>
   <section>
-      <h4>Website/membership</h4>
-      <h3>Project 1</h3>
-      <p>the description of the first project</p>
-      <p>Build with:</p>
-      <h5>HTML</h5>
-      <h5>CSS</h5>
-      <h5>JS</h5>
-      <button>VIEW PROJECT</button>
-  </section>
-  <section>
     <h4>Website/membership</h4>
-    <h3>Project 2</h3>
-    <p>the description of the first project</p>
+    <h3>Project 1</h3>
+    <p>The description of the first project</p>
     <p>Build with:</p>
     <h5>HTML</h5>
     <h5>CSS</h5>
     <h5>JS</h5>
     <button>VIEW PROJECT</button>
-</section>
-<section>
-  <h4>Website/membership</h4>
-  <h3>Project 3</h3>
-  <p>the description of the first project</p>
-  <p>Build with:</p>
-  <h5>HTML</h5>
-  <h5>CSS</h5>
-  <h5>JS</h5>
-  <button>VIEW PROJECT</button>
-</section>
-<section>
-  <h2>ABOUT ME</h2>
-  <p>description about me</p>
-  <div>
+  </section>
+  <section>
+    <h4>Website/membership</h4>
+    <h3>Project 2</h3>
+    <p>The description of the first project</p>
+    <p>Build with:</p>
+    <h5>HTML</h5>
+    <h5>CSS</h5>
+    <h5>JS</h5>
+    <button>VIEW PROJECT</button>
+  </section>
+  <section>
+    <h4>Website/membership</h4>
+    <h3>Project 3</h3>
+    <p>The description of the first project</p>
+    <p>Build with:</p>
+    <h5>HTML</h5>
+    <h5>CSS</h5>
+    <h5>JS</h5>
+    <button>VIEW PROJECT</button>
+  </section>
+  <section>
+    <h2>ABOUT ME</h2>
+    <p>Description about me</p>
     <div>
-      <img>
-      <h3>HTML</h3>
-      <p>paragraph explantion  blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+      <div>
+        <img>
+        <h3>HTML</h3>
+        <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+      </div>
+      <div>
+        <img>
+        <h3>CSS</h3>
+        <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+      </div>
+      <div>
+        <img>
+        <h3>Javascript</h3>
+        <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+      </div>
     </div>
-    <div>
-      <img>
-      <h3>CSS</h3>
-      <p>paragraph explantion  blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
-    </div>
-    <div>
-      <img>
-      <h3>Javascript</h3>
-      <p>paragraph explantion  blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
-    </div>
-  </div>
-</section>
-<section>
-  <h3>CONTACT ME</h3>
-</section>
-<section>
-  <h6>Let's Talk</h6>
-  <form action="#" method="post">
-    <div class="input-container">
-      <label for="name">Name</label>
-      <br>
-      <input type="text" id="name" name="name" required placeholder="Full Name">
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <br>
-      <input type="text" id="email" name="email" placeholder="Type your email adress.." required>
-    </div>
-    <div>
-      <label for="Message">Message</label>
-      <br>
-      <textarea id="Message" name="Message" placeholder="Message" rows="5" cols="30" required></textarea>
-    </div>
-    <button type="submit">SEND MESSAGE</button>
-  </form>
-</section>
+  </section>
+  <section>
+    <h3>CONTACT ME</h3>
+  </section>
+  <section>
+    <h6>Let's Talk</h6>
+    <form id="contactForm" action="#" method="post">
+      <div class="input-container">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="name" required placeholder="Full Name">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Type your email address..." required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <br>
+        <textarea id="message" name="message" placeholder="Message" rows="5" cols="30" required></textarea>
+      </div>
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+  </section>
+  <script src="./resources/script.js"></script>
 </body>
 </html>
