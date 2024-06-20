@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: white;
     font-size: 20px;
     font-family: "Unbounded", sans-serif;
+    margin: 0;
 }
 
 .first-page {
@@ -10,6 +15,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 nav {
@@ -35,6 +41,8 @@ nav {
     align-items: center;
     width: 100%;
     flex-wrap:nowrap;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .red-button {
@@ -47,12 +55,10 @@ nav {
     padding: 12px 16px;
     font-size: 14px;
     margin: 10px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-#small {
-    width: 170px;
-}
+
 
 nav .title {
     display: flex;
@@ -79,7 +85,7 @@ nav .title {
     padding: 10px;
     border-radius: 1cap;
     box-shadow: 0px 4px 4px #000000;
-    margin-right: 50px;
+    margin-left: 70px;
 }
 
 .about-buttons button {
@@ -101,3 +107,124 @@ nav .title {
     font-size: 14px;
     text-decoration: none;
 }
+
+main {
+    text-align: center;
+    padding: 0px 270px 200px 270px;
+
+}
+
+main h1 {
+    background: linear-gradient(to right, #D6D6D6, #B1B1B1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+    font-size: 90px;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+}
+
+main h2 {
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #312323, #000000);
+    padding: 12px 16px;
+    border: 1px;
+    border-image: linear-gradient(to bottom, #312323, #000000) 2;
+    border-radius: 1cap;
+    color: white;
+    box-shadow: 0px -1px 1px #666666;
+    text-decoration: none;
+}
+main h3 {
+    font-size: 20;
+    font-weight: 300;
+}
+
+.Projects-nav {
+    background-image: url(./images/PROJECTS.svg);
+    background-size: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-color: #150808;
+}
+
+.Projects-nav h3 {
+    text-align: center;
+    font-size: 32px;
+    background: linear-gradient(to right, #D6D6D6, #B1B1B1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+#proj-1 {
+    background-image: url(./images/background\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+}
+
+#proj-2 {
+    background-image: url(./images/background\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+}
+
+#proj-3 {
+    background-image: url(./images/background\ 3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+}
+
+.example-projects {
+    background-color: #211717;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 350px;
+}
+
+.project-details {
+    background-color: #211717;
+    padding: 25px;
+    display: inline-block;
+    gap: 15px;
+    border: 1px solid #313131;
+    border-radius: 1cqb;
+  }  
+
+.flex-dis {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.flex-dis h5 {
+    color: #CD1F3E;
+    border: 1px solid #CD1F3E;
+    border-radius: 1cqb;
+    font-size: 12px; 
+    padding: 4px 8px;
+    font-weight: normal;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #3B3B3B;
+}
+
+
+ 
+
+ 
+  
