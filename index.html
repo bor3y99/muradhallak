@@ -13,12 +13,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function() {
-        emailjs.init("8FZk84_4l1yvB2uTs"); 
-    })();
-  </script>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@1
+00..800&display=swap" rel="stylesheet">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("8FZk84_4l1yvB2uTs"); 
+  })();
+</script>
 </head>
 <body>
   <section class="first-page">
@@ -35,7 +38,7 @@
         <button class="red-button">CONTACT ME</button>
         <a href="https://github.com/bor3y99" class="link-button">
           <img src="./resources/Icons/github symbole.svg" alt="GitHub Logo" id="git-logo">
-          MY Github
+          <span>My Github</span>
         </a>
       </div>
     </nav>
@@ -54,7 +57,7 @@
   <section class="example-projects" id="proj-1">
     <div class="project-details">
       <h4>Website/membership</h4>
-      <h3>Project 2</h3>
+      <h3>Project Number 1</h3>
       <p>The description of the project</p>
       <hr>
       <p>Build with:</p>
@@ -69,7 +72,7 @@
   <section class="example-projects" id="proj-2">
     <div class="project-details">
       <h4>Website/membership</h4>
-      <h3>Project 2</h3>
+      <h3>Project Number 2</h3>
       <p>The description of the project</p>
       <hr>
       <p>Build with:</p>
@@ -84,7 +87,7 @@
   <section class="example-projects" id="proj-3">
     <div class="project-details">
       <h4>Website/membership</h4>
-      <h3>Project 2</h3>
+      <h3>Project Number 3</h3>
       <p>The description of the project</p>
       <hr>
       <p>Build with:</p>
@@ -96,33 +99,33 @@
       <button class="red-button" id="small">VIEW PROJECT</button>
     </div>
   </section>
-  <section>
+  <section class="all-aboutme">
     <h2>ABOUT ME</h2>
     <p>My name is Murad Hallak I'm full stack engineer, I went to University of Akron for 3 years 
       as computer engineer then I took a course with codeacademy to learn web devolpment.</p>
-    <div>
-      <div>
-        <img>
+    <div class="aboutcode-all">
+      <div class="aboutcode-single">
+        <img src="./resources/Icons/vuesax/outline/html-3.svg">
         <h3>HTML</h3>
         <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
       </div>
-      <div>
-        <img>
+      <div  class="aboutcode-single">
+        <img src="./resources/Icons/vuesax/outline/html-5.svg">
         <h3>CSS</h3>
         <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
       </div>
-      <div>
-        <img>
+      <div  class="aboutcode-single">
+        <img src="./resources/Icons/vuesax/outline/java-script.svg">
         <h3>Javascript</h3>
         <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
       </div>
     </div>
   </section>
-  <section>
+  <div class="contact-sec">
     <h3>CONTACT ME</h3>
-  </section>
-  <section>
-    <div>
+  </div>
+  <section class="contactform-all">
+    <div class="contactform-part">
       <h6>Let's Talk</h6>
       <form id="contactForm" action="#" method="post">
         <div class="input-container">
@@ -130,12 +133,12 @@
           <br>
           <input type="text" id="name" name="name" required placeholder="Full Name">
         </div>
-        <div>
+        <div class="input-container">
           <label for="email">Email</label>
           <br>
           <input type="email" id="email" name="email" placeholder="Type your email address..." required>
         </div>
-        <div>
+        <div class="text-area">
           <label for="message">Message</label>
           <br>
           <textarea id="message" name="message" placeholder="Message" rows="5" cols="30" required></textarea>
