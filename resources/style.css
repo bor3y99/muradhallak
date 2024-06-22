@@ -161,7 +161,7 @@ main h3 {
     background-repeat: no-repeat;
     padding-top: 120px;
     padding-bottom: 40px;
-    background-color: #150808;
+    background-color: #211E1E;
 }
 
 .Projects-nav h3 {
@@ -286,6 +286,7 @@ hr {
     justify-content: space-around;
     gap: 20px;
     margin-top: 40px;
+    padding: 0px 20px;
 }
 
 .aboutcode-single {
@@ -332,7 +333,7 @@ hr {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 40px;
+    margin: 40px 40px 80px 40px;
     border: 2px solid #313131;
     border-radius: 1cap;
     display: flex;
@@ -345,10 +346,7 @@ hr {
     flex: 1;
     max-width: 50%;
 }
-.contactform-part {
-    padding-right: 40px;
 
-}
 
 .contactform-part h6 {
     color: #CD1F3E;
@@ -369,12 +367,87 @@ hr {
 .input-container input {
     padding: 16px 20px;
     width: 100%;
-    background-color: #181111;
+    background-color: #211E1E;
     border: 1px solid #6F6F6F;
     border-radius: 1cap;
     margin-top: 8px;
+    color: white;
+}
+
+.input-container input::placeholder {
+    font-family: "Rubik" ,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
 }
 
 .text-area {
     padding-bottom: 15px;
+}
+
+.text-area label {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+.text-area textarea {
+    width: 100%;
+    padding: 20px 16px;
+    height: 134px;
+    margin-top: 8px;
+    background-color: #211E1E;
+    border: 1px solid #6F6F6F;
+    border-radius: 1cap;
+    color: white;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#long {
+    width: 100%;
+}
+
+
+.personal-info h5 {
+    margin: 0px;
+    font-size: 22px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #bebebe;
+}
+
+.my-info h4 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #211717;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+}
+
+.social-media a img {
+    border: 1px solid #CD1F3E;
+    border-radius: 25%;
+    padding: 8px;
 }
