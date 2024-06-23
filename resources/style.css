@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+  
 body {
     background-color: black;
     color: white;
@@ -9,6 +13,92 @@ body {
     font-family: "Unbounded", sans-serif;
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: none;
+}
+
+.menu-main {
+    height: 40px;
+    width: 40px;
+    background-color: #211717;
+    border: 1px solid #313131;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 20px; 
+    width: 20px;  
+    position: relative;
+}
+
+.menu {
+    background-color: #211717;
+    border: 1px solid #313131;
+    border-radius: 1cap;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 30px; 
+    right: 5px; 
+    z-index: 10; 
+}
+
+ul {
+    list-style: none;
+    padding: 25px;
+}
+
+.menu ul li{
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+}
+
+.line {
+    width: 18px; 
+    height: 1.67px; 
+    border-radius: 1cap; 
+    background: linear-gradient(to right, #D6D6D6, #B1B1B1);
+}
+
+.line:nth-child(1) {
+    top: 0;
+}
+
+.line:nth-child(2) {
+    top: 10px;
+}
+
+.line:nth-child(3) {
+    top: 20px;
+}
+
+
+.menu.active {
+    display: flex;
+}    
 
 .first-page {
     background-image: url(./images/spalsh\ background.png);
@@ -88,7 +178,7 @@ nav .title {
     margin-left: 40px;
 }
 
-.about-buttons button {
+.about-buttons a {
     background-color: #211717;
     border: none;
     color: white;
@@ -121,9 +211,12 @@ nav .title {
 
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0px 270px 200px 270px;
-
+    gap: 16px;
 }
 
 main h1 {
@@ -131,9 +224,10 @@ main h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent; 
-    font-size: 90px;
+    font-size: 85px;
     font-weight: bold;
-    margin: 20px 0px 0px 0px;
+    margin: 0;
+    padding-top: 50px;
 }
 
 main h2 {
@@ -147,11 +241,19 @@ main h2 {
     color: white;
     box-shadow: 0px -1px 1px #666666;
     text-decoration: none;
+    max-width: 870px;
+    margin: 0;
 }
 main h3 {
     font-size: 20;
     font-weight: 300;
-    font-family: "Rubik", sans-serif;;
+    font-family: "Rubik", sans-serif;
+    max-width: 870px;
+    margin: 0;
+}
+
+#main-red {
+    margin-bottom: 100px;
 }
 
 .Projects-nav {
@@ -450,4 +552,94 @@ footer {
     border: 1px solid #CD1F3E;
     border-radius: 25%;
     padding: 8px;
+}
+
+.message {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 1cap;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+.message.success {
+    color: green;
+    background-color: #e6ffe6;
+    border: 1px solid green;
+}
+
+.message.error {
+    color: red;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@media (max-width: 1250px) { /* desktop small screen*/
+    .Projects-nav {
+        background-size: 40%;
+    }
+}
+
+@media (max-width: 1024px) { /* ipad side way*/
+    .Projects-nav {
+        background-size: 50%;
+    }
+
+    .contact-sec {
+        background-size: 70%;
+
+    }
+}
+
+
+@media (max-width: 930px) { /* bigger ipad long way*/
+    .first-page {
+        background-image: url(./images/ipad-main.png);
+    }
+    .Projects-nav {
+        background-size: 60%;
+    }
+}
+
+@media (max-width: 825px) { /* ipad long way*/
+    .Projects-nav {
+        background-size: 80%;
+    }
+
+    .contact-sec {
+        background-size: 100%;
+
+    }
+    .link-button {
+        display: none;
+    }
+    
+    .about-buttons {
+        display: none;
+    }
+
+    header {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 484px) { /* mobile phone*/
+    .Projects-nav {
+        background-size: 100%;
+    }
+
+    .title h3 {
+        display: none;
+    }
 }

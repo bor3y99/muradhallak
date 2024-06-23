@@ -20,7 +20,7 @@
 <script>
   (function() {
     emailjs.init("8FZk84_4l1yvB2uTs"); 
-  })();
+  });
 </script>
 </head>
 <body>
@@ -31,24 +31,41 @@
         <h3>MURAD HALLAK</h3>
       </div>
       <div class="about-buttons">
-        <button>Projects</button>
-        <button>About Me</button>
+        <a href="#proj-1">Projects</a>
+        <a href="#about-section">About Me</a>
       </div>
       <div class="filler">
-        <button class="red-button">CONTACT ME</button>
+        <header>
+          <div class="menu-main">
+            <div class="menu-bar">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="#proj-1">Projects</a></li>
+              <li><a href="#about-section">About Me</a></li>
+              <li><a href="https://github.com/bor3y99">My Github</a></li>
+            </ul>
+          </div>
+        </header>
+        <a class="red-button" href="#contact-section">CONTACT ME</a>
         <a href="https://github.com/bor3y99" class="link-button">
           <img src="./resources/Icons/github symbole.svg" alt="GitHub Logo" id="git-logo">
           <span>My Github</span>
         </a>
       </div>
+      
     </nav>
     <main>
       <h1>MURAD HALLAK</h1>
       <h2>HTML, CSS & JS WEB DEVELOMENT</h2>
-      <h3>HTML is the plain language to add text, buttons, input and media. The CSS language to add design to the web page 
-        and animation ass well. JavaScript is the language to add certain features for example you can add how many days has it been since
-        I started coding my web page(<span id="daysCounter">0</span>)</h3>
-      <button class="red-button">CONTACT ME</button>
+      <h3>Welcome to my webpage. I cannot design  the page for you bring a design and I will do the rest with my magic.
+         I will shit on your garbage design then I will make it for you interactive and responsive don't add too much bullshit colors and 
+        animation. for more info you can send me a message on my bussniss phone or send an email</h3>
+      <a href="#contact-section" class="red-button" id="main-red" >CONTACT ME</a>
     </main>
   </section>
   <section class="Projects-nav">
@@ -66,7 +83,7 @@
         <h5>CSS</h5>
         <h5>JS</h5>
       </div>
-      <button class="red-button" id="small">VIEW PROJECT</button>
+      <a class="red-button" id="small">VIEW PROJECT</a>
     </div>
   </section>
   <section class="example-projects" id="proj-2">
@@ -81,7 +98,7 @@
         <h5>CSS</h5>
         <h5>JS</h5>
       </div>
-      <button class="red-button" id="small">VIEW PROJECT</button>
+      <a class="red-button" id="small">VIEW PROJECT</a>
     </div>
   </section>
   <section class="example-projects" id="proj-3">
@@ -96,10 +113,10 @@
         <h5>CSS</h5>
         <h5>JS</h5>
       </div>
-      <button class="red-button" id="small">VIEW PROJECT</button>
+      <a class="red-button" id="small">VIEW PROJECT</a>
     </div>
   </section>
-  <section class="all-aboutme">
+  <section class="all-aboutme" id="about-section">
     <h2>ABOUT ME</h2>
     <p>My name is Murad Hallak I'm full stack engineer, I went to University of Akron for 3 years 
       as computer engineer then I took a course with codeacademy to learn web devolpment.</p>
@@ -107,27 +124,29 @@
       <div class="aboutcode-single">
         <img src="./resources/Icons/vuesax/outline/html-3.svg" alt="html logo">
         <h3>HTML</h3>
-        <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+        <p>HTML is the plain language to add text, buttons, input and media you can also make tables with rows and columus</p>
       </div>
       <div  class="aboutcode-single">
         <img src="./resources/Icons/vuesax/outline/html-5.svg" alt="css logo">
         <h3>CSS</h3>
-        <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+        <p>The CSS language to add design to the web page, you can change the color of text background picture of a section 
+          and you can add animation as well.</p>
       </div>
       <div  class="aboutcode-single">
         <img src="./resources/Icons/vuesax/outline/java-script.svg" alt="js logo">
         <h3>Javascript</h3>
-        <p>Paragraph explanation blah blah blah no nah nah anha hala habibi habibityy zzzzz zzzzz</p>
+        <p>JavaScript is the language to add certain features for example you can add how many days has it been since
+          I started coding my web page <span id="daysCounter">0</span> days</p>
       </div>
     </div>
   </section>
   <div class="contact-sec">
     <h3>CONTACT ME</h3>
   </div>
-  <section class="contactform-all">
+  <section class="contactform-all" id="contact-section">
     <div class="contactform-part">
       <h6>Let's Talk</h6>
-      <form id="contactForm" action="#" method="post">
+      <form id="contactForm" action="#" method="post" novalidate>
         <div class="input-container">
           <label for="name">Name</label>
           <br>
@@ -141,9 +160,10 @@
         <div class="text-area">
           <label for="message">Message</label>
           <br>
-          <textarea id="message" name="message" placeholder="Message" required></textarea>
+          <textarea id="message" name="message" placeholder="Message" required minlength="20"></textarea>
         </div>
         <button type="submit" class="red-button" id="long">SEND MESSAGE</button>
+        <div id="responseMessage" class="message"></div>
       </form>
     </div>
     <div class="personal-info">
