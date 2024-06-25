@@ -132,7 +132,12 @@ nav {
     width: 100%;
     flex-wrap:nowrap;
     z-index: 0;
-    overflow: hidden;
+    overflow: visible;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+    padding: 12px 40px;
 }
 
 .red-button {
@@ -217,7 +222,7 @@ main {
     align-items: center;
     text-align: center;
     gap: 16px;
-    padding: 20px;
+    padding: 60px 20px 20px 20px;
 }
 
 main h1 {
@@ -316,6 +321,8 @@ main h3 {
     gap: 15px;
     border: 1px solid #313131;
     border-radius: 1cqb;
+    max-width: 350px;
+
   }  
 
 .flex-dis {
