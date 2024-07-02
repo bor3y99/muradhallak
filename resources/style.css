@@ -154,6 +154,10 @@ nav {
     font-weight: bold;
 }
 
+#small {
+    cursor: pointer;
+}
+
 .red-button:hover {
     background-color: #A61B34;
     border: 1px solid #A61B34;
