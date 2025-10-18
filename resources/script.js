@@ -1,24 +1,12 @@
-document.getElementById('contactForm').addEventListener('submit', async function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
+    // Only validate format
     if (!validateEmail(email)) {
         showMessage("Invalid email address.", "error");
-        return;
-    }
-
-    // Show "Verifying email..." message
-    showLoadingMessage("Verifying email, please be patient");
-
-    // Verify email existence
-    const isReal = await verifyEmailExists(email);
-
-    clearInterval(loadingInterval); // stop the dots animation
-
-    if (!isReal) {
-        showMessage("That email address doesn't exist or can't receive mail.", "error");
         return;
     }
 
@@ -45,23 +33,6 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-// Function to verify real emails
-async function verifyEmailExists(email) {
-    const apiKey = "087bf84f4b6692b16993f94b078ba987"; // Replace with your API key
-    const url = `https://apilayer.net/api/check?access_key=${apiKey}&email=${encodeURIComponent(email)}&smtp=1&format=1`;
-
-
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        // Returns true only if format, domain, and SMTP check are valid
-        return data.format_valid && data.mx_found && data.smtp_check;
-    } catch (error) {
-        console.error("Email verification error:", error);
-        return false;
-    }
-}
 
 
 
