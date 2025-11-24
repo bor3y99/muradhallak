@@ -108,9 +108,7 @@ ul {
     min-height: 100vh;
 }
 
-nav {
-    padding: 20px 40px;
-}
+
 
 #git-logo {
     height: 20px;
@@ -138,7 +136,7 @@ nav {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     z-index: 10;
-    padding: 12px 40px;
+    padding: 12px 60px;
 }
 
 .red-button {
@@ -316,7 +314,7 @@ main h3 {
 
 .example-projects {
     background-color: #211E1E;
-    padding: 25px;
+    padding: 60px;
     display: flex;
     gap: 15px;
     align-items: center;
@@ -455,7 +453,7 @@ hr {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 40px 40px 80px 40px;
+    margin: 40px 60px 80px 60px;
     border: 2px solid #313131;
     border-radius: 12px;
     display: flex;
@@ -552,7 +550,7 @@ textarea::placeholder {
 
 footer {
     display: flex;
-    padding: 40px;
+    padding: 40px 60px;
     justify-content: space-between;
     align-items: center;
     background-color: #211E1E;
